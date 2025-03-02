@@ -1,4 +1,5 @@
-# AVA AI Agent Launchpad Boilerplate
+# Aurora AI Agent Launchpad 
+### ✨ AI agent meme factory on Aurora virtual chain with X AI agent integration ✨
 *A platform for creating and tokenizing AI agents, chatting with them, and connecting agents for automated posting on X (Twitter), Discord, Telegram, and more.*
 
 > **Note:** This boilerplate serves as a starting point for developers to build and deploy their own AI agent launchpad.
@@ -44,22 +45,6 @@
 ---
 
 ## Deployments
-
-- **Sonic Blaze Testnet**
-- [0xB13624E8cC4Fb4Cd860c6D6c6F767776Ea497946](https://testnet.soniclabs.com/address/0xB13624E8cC4Fb4Cd860c6D6c6F767776Ea497946)
-
-- **Core Testnet**
-- [0xB13624E8cC4Fb4Cd860c6D6c6F767776Ea497946](https://scan.test.btcs.network/address/0xB13624E8cC4Fb4Cd860c6D6c6F767776Ea497946)
-
-- **Lukso Testnet**
-- [0xB13624E8cC4Fb4Cd860c6D6c6F767776Ea497946](https://explorer.execution.testnet.lukso.network/address/0xB13624E8cC4Fb4Cd860c6D6c6F767776Ea497946)
-- [Mini App](https://universaleverything.io/0x9820128280e82671dbcE7A9fb299c50f9edFbFB5/?network=testnet)
-
-- **Avalanche Fuji C-Chain**
-- [0xB13624E8cC4Fb4Cd860c6D6c6F767776Ea497946](https://subnets-test.avax.network/c-chain/address/0xB13624E8cC4Fb4Cd860c6D6c6F767776Ea497946)
-
-- **Kaia Kairos Testnet**
-- [0xbC6a338DcF849d389de5e9e38c14673310DD5B75](https://kairos.kaiascan.io/address/0xbc6a338dcf849d389de5e9e38c14673310dd5b75?tabId=overview&page=1)
 
 - **Aurora Virtual Chain**
 - [0xa4aae0C5C5B86A5d388d50377ccf0060A6bFbf1f](https://0x4e4541ac.explorer.aurora-cloud.dev/address/0xa4aae0C5C5B86A5d388d50377ccf0060A6bFbf1f)
