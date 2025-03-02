@@ -23,100 +23,6 @@ import { PinataSDK } from 'pinata-web3';
 
 
 
-
-
-// Add your custom chain configuration:
-const sonicBlazeTestnet = {
-  id: 57054,
-  name: 'Sonic Blaze Testnet',
-  network: 'sonic-blaze-testnet',
-  nativeCurrency: {
-    decimals: 18,
-    name: 'Sonic Blaze Token',
-    symbol: 'S',
-  },
-  rpcUrls: {
-    default: 'https://rpc.blaze.soniclabs.com',
-  },
-  blockExplorers: {
-    default: { name: 'SonicScan', url: 'https://testnet.sonicscan.org' },
-  },
-  testnet: true,
-};
-
-const coreBlockchainTestnet = {
-  id: 1115,
-  name: 'Core Blockchain Testnet',
-  network: 'core-blockchain-testnet',
-  nativeCurrency: {
-    decimals: 18,
-    name: 'tCORE',
-    symbol: 'tCORE',
-  },
-  rpcUrls: {
-    default: 'https://rpc.test.btcs.network',
-  },
-  blockExplorers: {
-    default: { name: 'CoreScan', url: 'https://scan.test.btcs.network' },
-  },
-  testnet: true,
-};
-
-const luksoTestnet = {
-  id: 4201,
-  name: 'LUKSO Testnet',
-  network: 'lukso-testnet',
-  nativeCurrency: {
-    decimals: 18,
-    name: 'LYXt',
-    symbol: 'LYXt',
-  },
-  rpcUrls: {
-    default: 'https://rpc.testnet.lukso.network',
-  },
-  blockExplorers: {
-    default: { name: 'LUKSO Explorer', url: 'https://explorer.execution.testnet.lukso.network' },
-  },
-  testnet: true,
-};
-
-const avalancheFuji = {
-  id: 43113,
-  name: 'Avalanche Fuji C-Chain',
-  network: 'avalanche-fuji',
-  nativeCurrency: {
-    decimals: 18,
-    name: 'Avalanche',
-    symbol: 'AVAX',
-  },
-  rpcUrls: {
-    default: 'https://api.avax-test.network/ext/bc/C/rpc',
-    websocket: 'wss://api.avax-test.network/ext/bc/C/ws',
-  },
-  blockExplorers: {
-    default: { name: 'Avalanche Fuji Explorer', url: 'https://subnets-test.avax.network/c-chain' },
-  },
-  testnet: true,
-};
-
-const kaiaKairosTestnet = {
-  id: 1001,
-  name: 'Kaia Kairos Testnet',
-  network: 'kaia-kairos-testnet',
-  nativeCurrency: {
-    decimals: 18,
-    name: 'KAIA',
-    symbol: 'KAIA',
-  },
-  rpcUrls: {
-    default: 'https://public-en-kairos.node.kaia.io',
-  },
-  blockExplorers: {
-    default: { name: 'Kaia Explorer', url: 'https://kairos.kaiascan.io' },
-  },
-  testnet: true,
-};
-
 const auroraChain = {
   id: 1313161644,
   name: 'Aurora Public',
@@ -255,19 +161,9 @@ const config = getDefaultConfig({
   appName: 'My RainbowKit App',
   projectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID,
   chains: [
-    sonicBlazeTestnet,
-    coreBlockchainTestnet,
-    luksoTestnet,
-    avalancheFuji,
-    kaiaKairosTestnet,
     auroraChain
   ],
   transports: {
-    [sonicBlazeTestnet.id]: http('https://rpc.blaze.soniclabs.com'),
-    [coreBlockchainTestnet.id]: http('https://rpc.test.btcs.network'),
-    [luksoTestnet.id]: http('https://rpc.testnet.lukso.network'),
-    [avalancheFuji.id]: http('https://api.avax-test.network/ext/bc/C/rpc'),
-    [kaiaKairosTestnet.id]: http('https://public-en-kairos.node.kaia.io'),
     [auroraChain.id]: http('https://0x4e4541ac.rpc.aurora-cloud.dev'), // <-- Aurora transport added here
   },
   ssr: true,
